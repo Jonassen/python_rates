@@ -9,13 +9,15 @@ Connection defined through environmentvariables `RATES_SERVER_DB_URL`, `RATES_SE
 An instance is provided through a dockerfile.
 To run:
 1. `docker build -t ratestask .`
-2. `docker run  -p 5432:5432`
+2. `docker run -p 5432:5432 ratestask`
 
 This instance is used by default through `./.env`s configuration file
 
 # Setup
 
 ## Dependencies
+This project requires a python venv to run (https://docs.python.org/3/library/venv.html)
+To initiate a new venv run `python3 -m venv .venv`, to set the venv as active run `source .venv/bin/activate`
 To install dependencies run `pip install -r requirements.txt`
 
 ## Running

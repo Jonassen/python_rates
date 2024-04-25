@@ -44,13 +44,13 @@ def create_app():
 def validate_parameters(date_from, date_to, origin, destination):
     errors = []
     if date_to is None:
-        errors.append("Missing required dateTo parameter")
+        errors.append("Missing required date_to parameter")
     if date_from is None:
-        errors.append("Missing required dateFrom parameter")
+        errors.append("Missing required date_from parameter")
     if origin is None:
-        errors.append("Missing required orig_code parameter")
+        errors.append("Missing required origin parameter")
     if destination is None:
-        errors.append("Missing required dest_code parameter")
+        errors.append("Missing required destination parameter")
 
     if (
             (date_to is not None)
